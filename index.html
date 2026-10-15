@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md. Saidur Rahman | Banking & Finance Professional</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter & Poppins for crisp typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome 6 Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            light: '#6ee7b7',   // Luminous Mint Emerald
+                            DEFAULT: '#fbbf24', // Royal Champagne Gold
+                            dark: '#10b981',    // Rich Jade Green
+                            accent: '#fde68a'   // Soft Warm Gold
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #032212;
+            background-image: 
+                radial-gradient(circle at 90% 90%, rgba(16, 185, 129, 0.55) 0%, transparent 55%),
+                radial-gradient(circle at 10% 10%, rgba(2, 24, 13, 0.95) 0%, transparent 60%),
+                linear-gradient(135deg, #02180c 0%, #05381c 35%, #076330 70%, #099447 100%);
+            background-attachment: fixed;
+            color: #f0fdf4;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        /* Fixed tsParticles Canvas Background */
+        #tsparticles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            pointer-events: auto;
+        }
+
+        /* Emerald & Gold Harmonized Glassmorphism */
+        .glass-panel {
+            background: linear-gradient(135deg, rgba(3, 35, 19, 0.68) 0%, rgba(5, 52, 28, 0.48) 100%);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+            border: 1px solid rgba(167, 243, 208, 0.22);
+            box-shadow: 0 25px 50px -12px rgba(1, 18, 9, 0.7), inset 0 1px 1px rgba(255, 255, 255, 0.18);
+            border-radius: 1.5rem;
+            transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+        }
+
+        .glass-panel:hover {
+            border-color: rgba(251, 191, 36, 0.45);
+            box-shadow: 0 28px 60px -12px rgba(2, 24, 13, 0.8), 0 0 25px -5px rgba(110, 231, 183, 0.15), inset 0 1px 1px rgba(255, 255, 255, 0.28);
+        }
+
+        .glass-card {
+            background: rgba(2, 28, 15, 0.62);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(167, 243, 208, 0.15);
+            border-radius: 1rem;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .glass-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(251, 191, 36, 0.5);
+            background: rgba(3, 38, 21, 0.82);
+            box-shadow: 0 15px 30px -10px rgba(1, 15, 8, 0.65);
+        }
+
+        /* Scroll Reveal Animations (Fade-In & Slide-Up) */
+        .reveal {
+            opacity: 0;
+            transform: translateY(45px);
+            transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+            will-change: opacity, transform;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .delay-100 { transition-delay: 100ms; }
+        .delay-200 { transition-delay: 200ms; }
+        .delay-300 { transition-delay: 300ms; }
+
+        /* Crisp Mint-to-Gold Gradient Typography */
+        .text-gradient {
+            background: linear-gradient(90deg, #ffffff 0%, #a7f3d0 45%, #fde68a 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 9px; }
+        ::-webkit-scrollbar-track { background: #02180c; }
+        ::-webkit-scrollbar-thumb { background: linear-gradient(180deg, #10b981, #fbbf24); border-radius: 9999px; }
+        ::-webkit-scrollbar-thumb:hover { background: #6ee7b7; }
+
+        /* Print friendly overrides */
+        @media print {
+            #tsparticles, nav, .no-print { display: none !important; }
+            body { background: #fff !important; color: #000 !important; }
+            .glass-panel, .glass-card { background: #fff !important; border: 1px solid #ddd !important; box-shadow: none !important; }
+            .reveal { opacity: 1 !important; transform: none !important; }
+        }
+    </style>
+</head>
+
+<body class="antialiased selection:bg-amber-400 selection:text-emerald-950">
+
+    <!-- Interactive Particles Container -->
+    <div id="tsparticles"></div>
+
+    <!-- Top Floating Navigation Bar -->
+    <nav class="sticky top-0 z-40 backdrop-blur-xl bg-emerald-950/75 border-b border-emerald-300/15 transition-all">
+        <div class="max-w-6xl mx-auto px-4 py-3.5 flex items-center justify-between">
+            <a href="#hero" class="flex items-center gap-3 group">
+                <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-brand-light via-brand-DEFAULT to-brand-dark p-0.5 shadow-lg shadow-emerald-950/50">
+                    <div class="w-full h-full bg-emerald-950 rounded-[10px] flex items-center justify-center font-bold text-sm text-gradient">
+                        SR
+                    </div>
+                </div>
+                <span class="font-bold text-base sm:text-lg tracking-tight text-white group-hover:text-brand-DEFAULT transition-colors">
+                    Md. Saidur Rahman
+                </span>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <div class="hidden lg:flex items-center gap-6 text-xs font-medium text-emerald-100/80">
+                <a href="#objective" class="hover:text-brand-DEFAULT transition-colors">Objective</a>
+                <a href="#personal-info" class="hover:text-brand-light transition-colors">Personal</a>
+                <a href="#career-path" class="hover:text-brand-DEFAULT transition-colors">Career Path</a>
+                <a href="#education" class="hover:text-brand-light transition-colors">Education</a>
+                <a href="#training" class="hover:text-brand-DEFAULT transition-colors">Training</a>
+                <a href="#gallery" class="hover:text-brand-light transition-colors">Achievements</a>
+                <a href="#references" class="hover:text-brand-DEFAULT transition-colors">References</a>
+                <a href="#family-info" class="hover:text-brand-light transition-colors">Family</a>
+            </div>
+
+            <!-- Action Buttons (Print & Firebase Admin Login) -->
+            <div class="flex items-center gap-2.5 no-print">
+                <button onclick="window.print()" title="Print / Save PDF" class="px-3 py-2 rounded-xl bg-emerald-900/40 hover:bg-emerald-800/60 border border-emerald-300/20 text-xs font-medium text-emerald-50 flex items-center gap-1.5 transition-all">
+                    <i class="fa-solid fa-print text-brand-DEFAULT"></i>
+                    <span class="hidden sm:inline">Print CV</span>
+                </button>
+
+                <button id="adminNavBtn" onclick="openAdminModal()" class="px-3.5 py-2 rounded-xl bg-gradient-to-r from-amber-400/20 to-emerald-400/20 hover:from-amber-400/30 hover:to-emerald-400/30 border border-amber-300/40 text-xs font-semibold text-amber-200 flex items-center gap-2 shadow-lg shadow-emerald-950/40 transition-all">
+                    <i id="adminNavIcon" class="fa-solid fa-lock text-brand-DEFAULT"></i>
+                    <span id="adminNavText">Admin Login</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Portfolio Container -->
+    <main class="relative z-10 max-w-6xl mx-auto px-4 py-10 md:py-16 space-y-12">
+
+        <!-- ================= 1. HERO SECTION ================= -->
+        <section id="hero" class="glass-panel p-8 md:p-14 flex flex-col items-center text-center reveal relative overflow-hidden">
+            <!-- Decorative ambient glow orbs -->
+            <div class="absolute -top-24 -left-24 w-64 h-64 bg-emerald-400/15 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="absolute -bottom-24 -right-24 w-64 h-64 bg-amber-400/15 rounded-full blur-3xl pointer-events-none"></div>
+
+            <!-- Profile Picture -->
+            <div class="relative group cursor-pointer mb-7" onclick="openLightbox('./image/profile_picture.jpg', 'Md. Saidur Rahman', 'Banking & Finance Professional')">
+                <div class="absolute -inset-1.5 bg-gradient-to-r from-brand-light via-brand-DEFAULT to-brand-dark rounded-full blur-md opacity-85 group-hover:opacity-100 transition duration-500 animate-pulse"></div>
+                <img id="heroProfileImg"
+                     src="./image/profile_picture.jpg"
+                     onerror="this.onerror=null; this.src='https://placehold.co/400x400/032212/fde68a?text=Md.+Saidur+Rahman';"
+                     alt="Md. Saidur Rahman"
+                     class="relative w-36 h-36 md:w-48 md:h-48 rounded-full object-cover border-4 border-emerald-950 shadow-2xl transition-transform duration-500 group-hover:scale-105">
+                <span class="absolute bottom-2 right-2 w-5 h-5 bg-brand-DEFAULT border-2 border-emerald-950 rounded-full shadow-md" title="Active Professional"></span>
+            </div>
+
+            <!-- Name & Title -->
+            <h1 id="displayHeroName" class="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight mb-3 text-gradient">
+                Md. Saidur Rahman
+            </h1>
+            <h2 id="displayHeroTitle" class="text-lg sm:text-xl md:text-2xl font-medium text-emerald-100 mb-6 flex items-center gap-2 justify-center flex-wrap">
+                <i class="fa-solid fa-building-columns text-brand-DEFAULT text-lg"></i>
+                <span>Banking & Finance Professional</span>
+            </h2>
+
+            <!-- Contact Info Pills -->
+            <div class="flex flex-wrap justify-center gap-3 md:gap-4 text-xs sm:text-sm md:text-base text-emerald-50">
+                <a id="displayHeroEmail" href="mailto:Saidur.jbl@gmail.com" class="flex items-center gap-2.5 hover:text-brand-DEFAULT hover:border-brand-DEFAULT/60 transition-all bg-emerald-950/75 px-4 py-2.5 rounded-full border border-emerald-300/20 shadow-md">
+                    <i class="fa-solid fa-envelope text-brand-DEFAULT"></i>
+                    <span>Saidur.jbl@gmail.com</span>
+                </a>
+                <a id="displayHeroPhone" href="tel:+8801716914980" class="flex items-center gap-2.5 hover:text-brand-light hover:border-brand-light/60 transition-all bg-emerald-950/75 px-4 py-2.5 rounded-full border border-emerald-300/20 shadow-md">
+                    <i class="fa-solid fa-phone text-brand-light"></i>
+                    <span>+880 1716914980</span>
+                </a>
+                <div class="flex items-center gap-2.5 bg-emerald-950/75 px-4 py-2.5 rounded-full border border-emerald-300/20 shadow-md">
+                    <i class="fa-solid fa-location-dot text-brand-DEFAULT"></i>
+                    <span id="displayHeroLocation">Charfasson, Bhola</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= 2. CAREER OBJECTIVE ================= -->
+        <section id="objective" class="glass-panel p-8 md:p-10 reveal delay-100 relative overflow-hidden">
+            <div class="flex flex-col md:flex-row md:items-center gap-6">
+                <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-brand-DEFAULT/25 to-brand-light/20 border border-brand-DEFAULT/40 flex items-center justify-center shrink-0 shadow-lg shadow-amber-500/10">
+                    <i class="fa-solid fa-bullseye text-2xl text-brand-DEFAULT"></i>
+                </div>
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h3 class="text-2xl font-bold text-white">Career Objective</h3>
+                        <span class="text-xs px-2.5 py-0.5 rounded-full bg-brand-DEFAULT/15 text-brand-accent border border-brand-DEFAULT/30 font-medium">Vision & Mission</span>
+                    </div>
+                    <p id="displayObjectiveText" class="text-emerald-50/90 text-sm sm:text-base leading-relaxed italic">
+                        "A dedicated and result-oriented banking professional with a strong academic foundation in Finance and Banking. Seeking to leverage my operational experience, analytical skills, and financial acumen to contribute to the strategic goals of a progressive financial institution while ensuring continuous professional growth."
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= 3. PERSONAL INFO ================= -->
+        <section id="personal-info" class="glass-panel p-8 md:p-10 reveal delay-100">
+            <h3 class="text-2xl font-bold mb-6 flex items-center gap-3 text-white border-b border-emerald-300/15 pb-4">
+                <i class="fa-solid fa-id-card-clip text-brand-DEFAULT"></i>
+                <span>Personal Information</span>
+            </h3>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <!-- Date of Birth -->
+                <div class="glass-card p-5 flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-brand-light/15 border border-brand-light/30 flex items-center justify-center shrink-0">
+                        <i class="fa-solid fa-cake-candles text-brand-light text-lg"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs uppercase tracking-wider text-emerald-200/70">Date of Birth</p>
+                        <p id="displayDob" class="text-base font-bold text-white mt-0.5">31 Dec 1995</p>
+                    </div>
+                </div>
+
+                <!-- Nationality -->
+                <div class="glass-card p-5 flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-brand-DEFAULT/15 border border-brand-DEFAULT/30 flex items-center justify-center shrink-0">
+                        <i class="fa-solid fa-flag text-brand-DEFAULT text-lg"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs uppercase tracking-wider text-emerald-200/70">Nationality</p>
+                        <p id="displayNationality" class="text-base font-bold text-white mt-0.5">Bangladeshi</p>
+                    </div>
+                </div>
+
+                <!-- Religion -->
+                <div class="glass-card p-5 flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-teal-400/15 border border-teal-400/30 flex items-center justify-center shrink-0">
+                        <i class="fa-solid fa-star-and-crescent text-teal-300 text-lg"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs uppercase tracking-wider text-emerald-200/70">Religion</p>
+                        <p id="displayReligion" class="text-base font-bold text-white mt-0.5">Islam</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= 4. CAREER PATH (TIMELINE UI) ================= -->
+        <section id="career-path" class="glass-panel p-8 md:p-10 reveal delay-200">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-8 border-b border-emerald-300/15 pb-4">
+                <h3 class="text-2xl font-bold flex items-center gap-3 text-white">
+                    <i class="fa-solid fa-briefcase text-brand-DEFAULT"></i>
+                    <span>Career Path</span>
+                </h3>
+                <span class="text-xs text-emerald-200/75 font-medium">Progressive Banking Experience</span>
+            </div>
+
+            <div class="relative border-l-2 border-emerald-400/40 ml-4 md:ml-6 space-y-10 py-2">
+                
+                <!-- Role 1: Senior Officer at Bangladesh Krishi Bank -->
+                <div class="relative pl-8 md:pl-10 group">
+                    <div class="absolute -left-[11px] top-1.5 w-5 h-5 rounded-full bg-brand-DEFAULT border-4 border-emerald-950 shadow-[0_0_16px_#fbbf24] transition-transform duration-300 group-hover:scale-125"></div>
+                    <div class="glass-card p-6 border-l-4 border-l-brand-DEFAULT">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
+                            <h4 class="text-xl font-bold text-white group-hover:text-brand-DEFAULT transition-colors">
+                                Senior Officer
+                            </h4>
+                            <span class="text-xs font-semibold text-amber-200 bg-amber-400/15 px-3.5 py-1 rounded-full border border-amber-400/35 w-max">
+                                <i class="fa-regular fa-calendar-check mr-1"></i> July 2026 - Present
+                            </span>
+                        </div>
+                        <p class="text-base font-semibold text-brand-light flex items-center gap-2">
+                            <i class="fa-solid fa-building-columns text-xs"></i>
+                            Bangladesh Krishi Bank
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Role 2: Officer (General) at Janata Bank PLC -->
+                <div class="relative pl-8 md:pl-10 group">
+                    <div class="absolute -left-[11px] top-1.5 w-5 h-5 rounded-full bg-brand-light border-4 border-emerald-950 shadow-[0_0_16px_#6ee7b7] transition-transform duration-300 group-hover:scale-125"></div>
+                    <div class="glass-card p-6 border-l-4 border-l-brand-light">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
+                            <h4 class="text-xl font-bold text-white group-hover:text-brand-light transition-colors">
+                                Officer (General)
+                            </h4>
+                            <span class="text-xs font-semibold text-brand-light bg-brand-light/15 px-3.5 py-1 rounded-full border border-brand-light/30 w-max">
+                                <i class="fa-regular fa-calendar mr-1"></i> Feb 2023 - June 2026
+                            </span>
+                        </div>
+                        <p class="text-base font-semibold text-emerald-200 flex items-center gap-2">
+                            <i class="fa-solid fa-building-columns text-xs"></i>
+                            Janata Bank PLC
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Role 3: Trainee Junior Officer at Trust Bank Limited -->
+                <div class="relative pl-8 md:pl-10 group">
+                    <div class="absolute -left-[11px] top-1.5 w-5 h-5 rounded-full bg-teal-300 border-4 border-emerald-950 shadow-[0_0_16px_#5eead4] transition-transform duration-300 group-hover:scale-125"></div>
+                    <div class="glass-card p-6 border-l-4 border-l-teal-400">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
+                            <h4 class="text-xl font-bold text-white group-hover:text-teal-300 transition-colors">
+                                Trainee Junior Officer
+                            </h4>
+                            <span class="text-xs font-semibold text-teal-200 bg-teal-400/15 px-3.5 py-1 rounded-full border border-teal-400/35 w-max">
+                                <i class="fa-regular fa-calendar mr-1"></i> June 2022 - Feb 2023
+                            </span>
+                        </div>
+                        <p class="text-base font-semibold text-teal-300 flex items-center gap-2">
+                            <i class="fa-solid fa-building-columns text-xs"></i>
+                            Trust Bank Limited
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================= 5. EDUCATION ================= -->
+        <section id="education" class="glass-panel p-8 md:p-10 reveal delay-100">
+            <h3 class="text-2xl font-bold mb-8 flex items-center gap-3 text-white border-b border-emerald-300/15 pb-4">
+                <i class="fa-solid fa-graduation-cap text-brand-DEFAULT"></i>
+                <span>Education</span>
+            </h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- MBA & BBA Card (Govt. Titumir College) -->
+                <div class="glass-card p-6 md:col-span-2 border-t-2 border-t-brand-DEFAULT">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
+                        <div>
+                            <span class="text-xs uppercase tracking-wider font-semibold text-brand-DEFAULT">Postgraduate & Undergraduate</span>
+                            <h4 class="text-xl font-bold text-white mt-1">Govt. Titumir College</h4>
+                            <p class="text-xs text-emerald-200/75">Affiliated with University of Dhaka</p>
+                        </div>
+                        <div class="flex flex-wrap gap-3">
+                            <div class="bg-amber-400/15 border border-amber-400/35 px-4 py-2 rounded-xl text-center">
+                                <span class="block text-xs text-emerald-100">MBA (Banking & Finance)</span>
+                                <span class="text-sm font-extrabold text-brand-DEFAULT">CGPA 3.59 / 4.00</span>
+                            </div>
+                            <div class="bg-brand-light/15 border border-brand-light/35 px-4 py-2 rounded-xl text-center">
+                                <span class="block text-xs text-emerald-100">BBA (Finance & Banking)</span>
+                                <span class="text-sm font-extrabold text-brand-light">CGPA 3.36 / 4.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HSC Card -->
+                <div class="glass-card p-6 flex flex-col justify-between border-t-2 border-t-brand-light">
+                    <div>
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs font-semibold uppercase tracking-wider text-brand-light">Higher Secondary Certificate (HSC)</span>
+                            <span class="px-3 py-1 rounded-full text-xs font-bold bg-brand-light/20 text-brand-light border border-brand-light/35">GPA 5.00</span>
+                        </div>
+                        <h4 class="text-lg font-bold text-white">Charfasson Govt. College</h4>
+                        <p class="text-xs text-emerald-200/75 mt-1">Group: Business Studies</p>
+                    </div>
+                </div>
+
+                <!-- SSC Card -->
+                <div class="glass-card p-6 flex flex-col justify-between border-t-2 border-t-teal-400">
+                    <div>
+                        <div class="flex items-center justify-between mb-2 flex-wrap gap-1">
+                            <span class="text-xs font-semibold uppercase tracking-wider text-teal-300">Secondary School Certificate (SSC)</span>
+                            <div class="flex items-center gap-1.5">
+                                <span class="px-3 py-1 rounded-full text-xs font-bold bg-teal-400/20 text-teal-200 border border-teal-400/40">GPA 5.00</span>
+                                <span class="px-2.5 py-1 rounded-full text-[11px] font-semibold bg-amber-400/20 text-amber-200 border border-amber-400/40">Talentpool</span>
+                            </div>
+                        </div>
+                        <h4 class="text-lg font-bold text-white">Aslampur Mohammadia Dakhil Madrasah</h4>
+                        <p class="text-xs text-emerald-200/75 mt-1">Group: Humanities • Board Talentpool Scholarship</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= 6. TRAINING & COURSES ================= -->
+        <section id="training" class="glass-panel p-8 md:p-10 reveal delay-200">
+            <h3 class="text-2xl font-bold mb-8 flex items-center gap-3 text-white border-b border-emerald-300/15 pb-4">
+                <i class="fa-solid fa-certificate text-brand-DEFAULT"></i>
+                <span>Training & Courses</span>
+            </h3>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                <!-- Course 1 -->
+                <div class="glass-card p-5 flex flex-col justify-between">
+                    <div>
+                        <div class="w-11 h-11 rounded-xl bg-brand-DEFAULT/20 border border-brand-DEFAULT/35 flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-award text-brand-DEFAULT text-lg"></i>
+                        </div>
+                        <h4 class="text-base font-bold text-white mb-1">JAIBB Banking Diploma</h4>
+                        <p class="text-xs text-emerald-200/75">Institute of Bankers, Bangladesh (IBB)</p>
+                    </div>
+                    <span class="mt-4 inline-block text-[11px] text-brand-DEFAULT font-semibold">Professional Banking Qualification</span>
+                </div>
+
+                <!-- Course 2 -->
+                <div class="glass-card p-5 flex flex-col justify-between">
+                    <div>
+                        <div class="w-11 h-11 rounded-xl bg-brand-light/20 border border-brand-light/35 flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-shield-halved text-brand-light text-lg"></i>
+                        </div>
+                        <h4 class="text-base font-bold text-white mb-1">AML and CFT Training</h4>
+                        <p class="text-xs text-emerald-200/75">Arranged by Janata Bank Limited</p>
+                    </div>
+                    <span class="mt-4 inline-block text-[11px] text-brand-light font-semibold">Compliance & Risk Control</span>
+                </div>
+
+                <!-- Course 3 -->
+                <div class="glass-card p-5 flex flex-col justify-between">
+                    <div>
+                        <div class="w-11 h-11 rounded-xl bg-teal-400/20 border border-teal-400/35 flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-chalkboard-user text-teal-300 text-lg"></i>
+                        </div>
+                        <h4 class="text-base font-bold text-white mb-1">Foundation Training Course Part I</h4>
+                        <p class="text-xs text-emerald-200/75">Arranged by Trust Bank Limited</p>
+                    </div>
+                    <span class="mt-4 inline-block text-[11px] text-teal-300 font-semibold">Core Banking Operations</span>
+                </div>
+
+                <!-- Course 4 -->
+                <div class="glass-card p-5 flex flex-col justify-between">
+                    <div>
+                        <div class="w-11 h-11 rounded-xl bg-amber-300/20 border border-amber-300/35 flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-language text-amber-200 text-lg"></i>
+                        </div>
+                        <h4 class="text-base font-bold text-white mb-1">English Communication Skills</h4>
+                        <p class="text-xs text-emerald-200/75">Sponsored by The American Center</p>
+                    </div>
+                    <span class="mt-4 inline-block text-[11px] text-amber-200 font-semibold">Language & Leadership</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= 7. ACHIEVEMENTS & GALLERY ================= -->
+        <section id="gallery" class="glass-panel p-8 md:p-10 reveal">
+            <div class="text-center max-w-2xl mx-auto mb-9">
+                <h3 class="text-3xl font-extrabold text-gradient inline-flex items-center gap-3 mb-2">
+                    <i class="fa-solid fa-trophy text-brand-DEFAULT"></i>
+                    <span>Achievements & Gallery</span>
+                </h3>
+                <p class="text-emerald-100/80 text-sm">
+                    Official appointment letters, career milestones, and training snapshots. Click any image to inspect in full screen.
+                </p>
+            </div>
+
+            <!-- Notable Recommendations Banner -->
+            <div class="mb-9 glass-card p-6 border border-emerald-300/20">
+                <h4 class="text-sm font-bold uppercase tracking-wider text-brand-DEFAULT mb-4 flex items-center gap-2">
+                    <i class="fa-solid fa-medal text-brand-DEFAULT"></i>
+                    <span>Key Recommendations & Career Milestones</span>
+                </h4>
+                <div id="recommendationsList" class="flex flex-wrap gap-2.5">
+                    <span class="px-4 py-2 rounded-full text-xs font-semibold bg-emerald-400/15 text-emerald-200 border border-emerald-400/35 flex items-center gap-2">
+                        <i class="fa-solid fa-circle-check text-brand-light"></i> MTO at Trust Bank & AIBL
+                    </span>
+                    <span class="px-4 py-2 rounded-full text-xs font-semibold bg-amber-400/15 text-amber-200 border border-amber-400/35 flex items-center gap-2">
+                        <i class="fa-solid fa-circle-check text-brand-DEFAULT"></i> Senior Officer at Uttara Bank
+                    </span>
+                    <span class="px-4 py-2 rounded-full text-xs font-semibold bg-teal-400/15 text-teal-200 border border-teal-400/35 flex items-center gap-2">
+                        <i class="fa-solid fa-circle-check text-teal-300"></i> Asst. Accountant at DPDC
+                    </span>
+                    <span class="px-4 py-2 rounded-full text-xs font-semibold bg-gradient-to-r from-amber-400/25 to-emerald-400/25 text-white border border-amber-300/50 shadow-lg shadow-emerald-950/50 flex items-center gap-2">
+                        <i class="fa-solid fa-earth-americas text-brand-DEFAULT"></i> CEEP by IREX
+                    </span>
+                </div>
+            </div>
+
+            <!-- Dedicated 8-Item Gallery Grid with Exact GitHub Repository Paths -->
+            <div id="galleryGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- 1. BKB Offer Letter -->
+                <div onclick="openLightbox('./image/BKB Offer Letter.jpeg', 'Bangladesh Krishi Bank', 'Senior Officer Offer Letter')"
+                     class="group relative rounded-2xl overflow-hidden shadow-xl border border-emerald-300/20 hover:border-brand-DEFAULT/60 aspect-[4/3] cursor-pointer bg-emerald-950 transition-all">
+                    <img src="./image/BKB Offer Letter.jpeg"
+                         onerror="this.onerror=null; this.src='https://placehold.co/600x450/032212/6ee7b7?text=BKB+Offer+Letter';"
+                         alt="BKB Offer Letter"
+                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-emerald-950/95 via-emerald-950/35 to-transparent opacity-85 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+                        <span class="text-xs font-bold uppercase tracking-wider text-brand-DEFAULT">Bangladesh Krishi Bank</span>
+                        <span class="text-white text-sm font-semibold">Senior Officer Offer Letter</span>
+                    </div>
+                </div>
+
+                <!-- 2. AIBL Offer Letter -->
+                <div onclick="openLightbox('./image/AIBL Offer Letter.jpeg', 'Al-Arafah Islami Bank Ltd', 'Management Trainee Officer (MTO) Offer Letter')"
+                     class="group relative rounded-2xl overflow-hidden shadow-xl border border-emerald-300/20 hover:border-brand-DEFAULT/60 aspect-[4/3] cursor-pointer bg-emerald-950 transition-all">
+                    <img src="./image/AIBL Offer Letter.jpeg"
+                         onerror="this.onerror=null; this.src='https://placehold.co/600x450/032212/34d399?text=AIBL+Offer+Letter';"
+                         alt="AIBL Offer Letter"
+                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-emerald-950/95 via-emerald-950/35 to-transparent opacity-85 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+                        <span class="text-xs font-bold uppercase tracking-wider text-brand-light">Al-Arafah Islami Bank</span>
+                        <span class="text-white text-sm font-semibold">MTO Offer Letter</span>
+                    </div>
+                </div>
+
+                <!-- 3. Trust Bank Offer letter -->
+                <div onclick="openLightbox('./image/Trust Bank Offer letter.jpeg', 'Trust Bank Limited', 'Management Trainee Officer Offer Letter')"
+                     class="group relative rounded-2xl overflow-hidden shadow-xl border border-emerald-300/20 hover:border-brand-DEFAULT/60 aspect-[4/3] cursor-pointer bg-emerald-950 transition-all">
+                    <img src="./image/Trust Bank Offer letter.jpeg"
+                         onerror="this.onerror=null; this.src='https://placehold.co/600x450/032212/fbbf24?text=Trust+Bank+Offer+Letter';"
+                         alt="Trust Bank Offer letter"
+                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-emerald-950/95 via-emerald-950/35 to-transparent opacity-85 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+                        <span class="text-xs font-bold uppercase tracking-wider text-amber-300">Trust Bank Limited</span>
+                        <span class="text-white text-sm font-semibold">MTO Appointment Letter</span>
+                    </div>
+                </div>
+
+                <!-- 4. Uttara Bank Offer Letter -->
+                <div onclick="openLightbox('./image/Uttara Bank Offer Letter.jpeg', 'Uttara Bank PLC', 'Senior Officer Offer Letter')"
+                     class="group relative rounded-2xl overflow-hidden shadow-xl border border-emerald-300/20 hover:border-brand-DEFAULT/60 aspect-[4/3] cursor-pointer bg-emerald-950 transition-all">
+                    <img src="./image/Uttara Bank Offer Letter.jpeg"
+                         onerror="this.onerror=null; this.src='https://placehold.co/600x450/032212/5eead4?text=Uttara+Bank+Offer+Letter';"
+                         alt="Uttara Bank Offer Letter"
+                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-emerald-950/95 via-emerald-950/35 to-transparent opacity-85 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+                        <span class="text-xs font-bold uppercase tracking-wider text-teal-300">Uttara Bank PLC</span>
+                        <span class="text-white text-sm font-semibold">Senior Officer Offer Letter</span>
+                    </div>
+                </div>
+
+                <!-- 5. DPDC SAA Offer Letter -->
+                <div onclick="openLightbox('./image/DPDC SAA Offer Letter.jpeg', 'DPDC', 'Assistant Accountant Offer Letter')"
+                     class="group relative rounded-2xl overflow-hidden shadow-xl border border-emerald-300/20 hover:border-brand-DEFAULT/60 aspect-[4/3] cursor-pointer bg-emerald-950 transition-all">
+                    <img src="./image/DPDC SAA Offer Letter.jpeg"
+                         onerror="this.onerror=null; this.src='https://placehold.co/600x450/032212/fde68a?text=DPDC+SAA+Offer+Letter';"
+                         alt="DPDC SAA Offer Letter"
+                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-emerald-950/95 via-emerald-950/35 to-transparent opacity-85 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+                        <span class="text-xs font-bold uppercase tracking-wider text-brand-accent">DPDC</span>
+                        <span class="text-white text-sm font-semibold">Assistant Accountant Offer</span>
+                    </div>
+                </div>
+
+                <!-- 6. Janata Bank Training -->
+                <div onclick="openLightbox('./image/Janata Bank Training.jpeg', 'Janata Bank PLC', 'Training Presentation & Public Speaking')"
+                     class="group relative rounded-2xl overflow-hidden shadow-xl border border-emerald-300/20 hover:border-brand-DEFAULT/60 aspect-[4/3] cursor-pointer bg-emerald-950 transition-all">
+                    <img src="./image/Janata Bank Training.jpeg"
+                         onerror="this.onerror=null; this.src='https://placehold.co/600x450/032212/6ee7b7?text=Janata+Bank+Training';"
+                         alt="Janata Bank Training"
+                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-emerald-950/95 via-emerald-950/35 to-transparent opacity-85 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+                        <span class="text-xs font-bold uppercase tracking-wider text-brand-light">Janata Bank PLC</span>
+                        <span class="text-white text-sm font-semibold">Training Session Presentation</span>
+                    </div>
+                </div>
+
+                <!-- 7. Janata Bank Foundation Training -->
+                <div onclick="openLightbox('./image/Janata Bank Foundation Training.jpeg', 'Janata Bank Staff College, Dhaka', 'Banking Laws & Regulations Batch 02/2023')"
+                     class="group relative rounded-2xl overflow-hidden shadow-xl border border-emerald-300/20 hover:border-brand-DEFAULT/60 aspect-[4/3] cursor-pointer bg-emerald-950 transition-all">
+                    <img src="./image/Janata Bank Foundation Training.jpeg"
+                         onerror="this.onerror=null; this.src='https://placehold.co/600x450/032212/fbbf24?text=Janata+Bank+Foundation+Training';"
+                         alt="Janata Bank Foundation Training"
+                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-emerald-950/95 via-emerald-950/35 to-transparent opacity-85 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+                        <span class="text-xs font-bold uppercase tracking-wider text-brand-DEFAULT">Janata Bank Staff College</span>
+                        <span class="text-white text-sm font-semibold">Foundation Training Batch 02/2023</span>
+                    </div>
+                </div>
+
+                <!-- 8. Titumir College Convocation from DU -->
+                <div onclick="openLightbox('./image/Titumir College Convocation from DU.jpeg', 'University of Dhaka', 'Govt. Titumir College Convocation Souvenirs')"
+                     class="group relative rounded-2xl overflow-hidden shadow-xl border border-emerald-300/20 hover:border-brand-DEFAULT/60 aspect-[4/3] cursor-pointer bg-emerald-950 transition-all">
+                    <img src="./image/Titumir College Convocation from DU.jpeg"
+                         onerror="this.onerror=null; this.src='https://placehold.co/600x450/032212/a7f3d0?text=Titumir+College+Convocation';"
+                         alt="Titumir College Convocation from DU"
+                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-emerald-950/95 via-emerald-950/35 to-transparent opacity-85 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+                        <span class="text-xs font-bold uppercase tracking-wider text-amber-300">University of Dhaka</span>
+                        <span class="text-white text-sm font-semibold">Titumir College Convocation</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================= 8. REFERENCES ================= -->
+        <section id="references" class="glass-panel p-8 md:p-10 reveal delay-100">
+            <h3 class="text-2xl font-bold mb-8 flex items-center gap-3 text-white border-b border-emerald-300/15 pb-4">
+                <i class="fa-solid fa-user-check text-brand-DEFAULT"></i>
+                <span>References</span>
+            </h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Reference 1 -->
+                <div class="glass-card p-6 flex flex-col justify-between border-l-4 border-l-brand-DEFAULT">
+                    <div>
+                        <h4 class="text-lg font-bold text-white">Mohammod Rakibul Hoque Munsi</h4>
+                        <p class="text-sm font-medium text-brand-DEFAULT mt-1">Assistant Professor</p>
+                        <p class="text-xs text-emerald-100/85 mt-1">Department of Finance and Banking</p>
+                        <p class="text-xs text-emerald-200/65">Govt. Titumir College, Dhaka</p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-emerald-300/15">
+                        <a href="tel:01842663444" class="inline-flex items-center gap-2 text-xs font-semibold text-brand-light hover:underline">
+                            <i class="fa-solid fa-phone"></i> Cell: 01842663444
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Reference 2 -->
+                <div class="glass-card p-6 flex flex-col justify-between border-l-4 border-l-brand-light">
+                    <div>
+                        <h4 class="text-lg font-bold text-white">Abdul Kader</h4>
+                        <p class="text-sm font-medium text-brand-light mt-1">Deputy Director (DGFI)</p>
+                        <p class="text-xs text-emerald-100/85 mt-1">Directorate General of Forces Intelligence</p>
+                        <p class="text-xs text-emerald-200/65">First Secretary, Bangladesh Embassy, Myanmar</p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-emerald-300/15">
+                        <a href="tel:01717208566" class="inline-flex items-center gap-2 text-xs font-semibold text-brand-DEFAULT hover:underline">
+                            <i class="fa-solid fa-phone"></i> Cell: 01717208566
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= 9. FAMILY INFO (PLACED AT THE VERY BOTTOM BEFORE FOOTER) ================= -->
+        <section id="family-info" class="glass-panel p-8 md:p-10 reveal delay-200">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-8 border-b border-emerald-300/15 pb-4">
+                <h3 class="text-2xl font-bold flex items-center gap-3 text-white">
+                    <i class="fa-solid fa-people-roof text-brand-DEFAULT"></i>
+                    <span>Family Information</span>
+                </h3>
+                <span class="text-xs text-emerald-200/75">Family Background & Siblings</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                <!-- Father -->
+                <div class="glass-card p-5 flex items-start gap-4">
+                    <div class="w-11 h-11 rounded-xl bg-brand-DEFAULT/15 border border-brand-DEFAULT/35 flex items-center justify-center shrink-0 mt-0.5">
+                        <i class="fa-solid fa-user-tie text-brand-DEFAULT"></i>
+                    </div>
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-wider text-brand-DEFAULT">Father</span>
+                        <h4 class="text-base font-bold text-white mt-0.5">Md. Abdul Kader, MA (Kamil)</h4>
+                        <p class="text-xs text-emerald-100/80 mt-1">Teacher at Abdul Jabbar Dakhil Madrasha</p>
+                    </div>
+                </div>
+
+                <!-- Mother -->
+                <div class="glass-card p-5 flex items-start gap-4">
+                    <div class="w-11 h-11 rounded-xl bg-brand-light/15 border border-brand-light/35 flex items-center justify-center shrink-0 mt-0.5">
+                        <i class="fa-solid fa-house-user text-brand-light"></i>
+                    </div>
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-wider text-brand-light">Mother</span>
+                        <h4 class="text-base font-bold text-white mt-0.5">Rokeya Begum</h4>
+                        <p class="text-xs text-emerald-100/80 mt-1">Home-Maker</p>
+                    </div>
+                </div>
+
+                <!-- Elder Sister -->
+                <div class="glass-card p-5 flex items-start gap-4">
+                    <div class="w-11 h-11 rounded-xl bg-teal-400/15 border border-teal-400/35 flex items-center justify-center shrink-0 mt-0.5">
+                        <i class="fa-solid fa-chalkboard-user text-teal-300"></i>
+                    </div>
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-wider text-teal-300">Elder Sister</span>
+                        <h4 class="text-base font-bold text-white mt-0.5">Selina Begum, BA (Pass Course)</h4>
+                        <p class="text-xs text-emerald-100/80 mt-1">Teacher at a Govt Primary School</p>
+                    </div>
+                </div>
+
+                <!-- Elder Brother -->
+                <div class="glass-card p-5 flex items-start gap-4">
+                    <div class="w-11 h-11 rounded-xl bg-amber-300/15 border border-amber-300/35 flex items-center justify-center shrink-0 mt-0.5">
+                        <i class="fa-solid fa-briefcase text-amber-200"></i>
+                    </div>
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-wider text-amber-200">Elder Brother</span>
+                        <h4 class="text-base font-bold text-white mt-0.5">Md. Mahbubur Rahman, BA (Pass Course)</h4>
+                        <p class="text-xs text-emerald-100/80 mt-1">Former Accounts Officer at Fashion Eye Hospital (resigned due to health issues)</p>
+                    </div>
+                </div>
+
+                <!-- Younger Brother -->
+                <div class="glass-card p-5 flex items-start gap-4 md:col-span-2">
+                    <div class="w-11 h-11 rounded-xl bg-emerald-400/15 border border-emerald-400/35 flex items-center justify-center shrink-0 mt-0.5">
+                        <i class="fa-solid fa-bolt text-brand-light"></i>
+                    </div>
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-wider text-brand-light">Younger Brother</span>
+                        <h4 class="text-base font-bold text-white mt-0.5">Md. Ohidur Rahman</h4>
+                        <p class="text-xs text-emerald-100/80 mt-1">Assistant Director (Audit) at Bangladesh Power Development Board (BPDB)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= FOOTER ================= -->
+        <footer class="text-center py-8 border-t border-emerald-300/15 text-emerald-100/75 text-xs sm:text-sm space-y-2">
+            <p class="font-medium text-emerald-50">
+                &copy; <span id="currentYear">2026</span> <span class="text-gradient font-bold">Md. Saidur Rahman</span> • All Rights Reserved
+            </p>
+            <p class="text-xs text-emerald-200/60">
+                Senior Officer, Bangladesh Krishi Bank | Banking & Finance Portfolio
+            </p>
+        </footer>
+
+    </main>
+
+    <!-- ================= IMAGE LIGHTBOX MODAL ================= -->
+    <div id="lightboxModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-emerald-950/90 backdrop-blur-xl p-4 no-print" onclick="closeLightbox(event)">
+        <div class="relative max-w-4xl w-full bg-emerald-950/95 border border-emerald-300/25 rounded-2xl overflow-hidden shadow-2xl" onclick="event.stopPropagation()">
+            <div class="flex items-center justify-between px-5 py-3.5 border-b border-emerald-300/15">
+                <div>
+                    <h4 id="lightboxTitle" class="text-base font-bold text-white">Document Preview</h4>
+                    <p id="lightboxSubtitle" class="text-xs text-brand-DEFAULT"></p>
+                </div>
+                <button onclick="closeLightbox()" class="w-9 h-9 rounded-xl bg-white/5 hover:bg-rose-500/20 text-emerald-200 hover:text-rose-300 flex items-center justify-center transition-colors">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+            <div class="p-4 flex items-center justify-center bg-black/50 max-h-[78vh] overflow-auto">
+                <img id="lightboxImg" src="" alt="Preview" class="max-h-[72vh] w-auto object-contain rounded-lg">
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= FIREBASE ADMIN LOGIN & CMS MODAL ================= -->
+    <div id="adminModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-emerald-950/85 backdrop-blur-xl p-4 no-print">
+        <div class="relative max-w-lg w-full glass-panel p-6 sm:p-8 border border-brand-DEFAULT/40 shadow-2xl max-h-[90vh] overflow-y-auto">
+            <!-- Modal Header -->
+            <div class="flex items-center justify-between border-b border-emerald-300/15 pb-4 mb-6">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-brand-DEFAULT/20 border border-brand-DEFAULT/40 flex items-center justify-center">
+                        <i class="fa-solid fa-user-shield text-brand-DEFAULT"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-white">Portfolio Admin Portal</h3>
+                        <p id="firebaseStatusBadge" class="text-[11px] text-brand-light flex items-center gap-1">
+                            <span class="w-2 h-2 rounded-full bg-brand-light animate-ping"></span>
+                            Firebase Connected (saidur-rahman-00)
+                        </p>
+                    </div>
+                </div>
+                <button onclick="closeAdminModal()" class="w-8 h-8 rounded-lg bg-white/5 hover:bg-white/10 text-emerald-200 hover:text-white flex items-center justify-center">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <!-- Status / Feedback Banner -->
+            <div id="adminAlertBox" class="hidden mb-4 p-3.5 rounded-xl text-xs font-medium border"></div>
+
+            <!-- VIEW 1: LOGIN FORM -->
+            <div id="adminLoginView" class="space-y-4">
+                <p class="text-xs text-emerald-100/85 leading-relaxed">
+                    Sign in with your administrator email and password to update portfolio content in real time via Firebase Firestore.
+                </p>
+                <div>
+                    <label class="block text-xs font-semibold text-emerald-100 mb-1.5">Admin Email</label>
+                    <input id="adminEmailInput" type="email" value="Saidur.jbl@gmail.com" placeholder="Saidur.jbl@gmail.com"
+                           class="w-full px-4 py-2.5 rounded-xl bg-emerald-950/90 border border-emerald-300/25 text-sm text-white focus:outline-none focus:border-brand-DEFAULT">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-emerald-100 mb-1.5">Password</label>
+                    <input id="adminPasswordInput" type="password" placeholder="Enter admin password"
+                           class="w-full px-4 py-2.5 rounded-xl bg-emerald-950/90 border border-emerald-300/25 text-sm text-white focus:outline-none focus:border-brand-DEFAULT">
+                </div>
+                <div class="pt-2 flex flex-col sm:flex-row gap-3">
+                    <button id="loginSubmitBtn" onclick="handleAdminLogin()" class="flex-1 py-2.5 px-4 rounded-xl bg-gradient-to-r from-brand-DEFAULT to-brand-light hover:opacity-95 text-emerald-950 font-bold text-xs shadow-lg shadow-amber-500/20 flex items-center justify-center gap-2 transition-all">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                        <span>Login with Firebase Auth</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- VIEW 2: LOGGED-IN CMS EDITOR -->
+            <div id="adminDashboardView" class="hidden space-y-4">
+                <div class="p-3 rounded-xl bg-emerald-500/15 border border-emerald-400/30 flex items-center justify-between text-xs">
+                    <span class="text-brand-light font-medium">
+                        <i class="fa-solid fa-circle-check mr-1"></i> Signed in as: <strong id="loggedInUserEmail">Admin</strong>
+                    </span>
+                    <button onclick="handleAdminLogout()" class="text-amber-300 hover:underline font-semibold">
+                        Sign Out
+                    </button>
+                </div>
+
+                <div class="space-y-3">
+                    <div>
+                        <label class="block text-xs font-semibold text-emerald-100 mb-1">Professional Title</label>
+                        <input id="editHeroTitle" type="text" value="Banking & Finance Professional"
+                               class="w-full px-3.5 py-2 rounded-xl bg-emerald-950/90 border border-emerald-300/25 text-xs text-white">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-emerald-100 mb-1">Phone Number</label>
+                        <input id="editHeroPhone" type="text" value="+880 1716914980"
+                               class="w-full px-3.5 py-2 rounded-xl bg-emerald-950/90 border border-emerald-300/25 text-xs text-white">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-emerald-100 mb-1">Location</label>
+                        <input id="editHeroLocation" type="text" value="Charfasson, Bhola"
+                               class="w-full px-3.5 py-2 rounded-xl bg-emerald-950/90 border border-emerald-300/25 text-xs text-white">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-emerald-100 mb-1">Career Objective</label>
+                        <textarea id="editObjectiveText" rows="4"
+                                  class="w-full px-3.5 py-2 rounded-xl bg-emerald-950/90 border border-emerald-300/25 text-xs text-white">A dedicated and result-oriented banking professional with a strong academic foundation in Finance and Banking. Seeking to leverage my operational experience, analytical skills, and financial acumen to contribute to the strategic goals of a progressive financial institution while ensuring continuous professional growth.</textarea>
+                    </div>
+                </div>
+
+                <div class="pt-2 flex gap-3">
+                    <button onclick="savePortfolioChanges()" class="flex-1 py-2.5 px-4 rounded-xl bg-gradient-to-r from-brand-DEFAULT to-brand-light text-emerald-950 font-bold text-xs shadow-lg flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                        <span>Save Changes to Firestore</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- tsParticles JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-engine@2.12.0/tsparticles.engine.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+
+    <script>
+        // Set footer year
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Initialize tsParticles Interactive Moving Background
+        window.addEventListener('DOMContentLoaded', () => {
+            if (window.tsParticles) {
+                tsParticles.load("tsparticles", {
+                    background: { color: { value: "transparent" } },
+                    fpsLimit: 60,
+                    interactivity: {
+                        events: {
+                            onHover: { enable: true, mode: "repulse" },
+                            onClick: { enable: true, mode: "push" },
+                            resize: true
+                        },
+                        modes: {
+                            repulse: { distance: 110, duration: 0.4 },
+                            push: { quantity: 3 }
+                        }
+                    },
+                    particles: {
+                        color: { value: ["#a7f3d0", "#fde68a", "#6ee7b7", "#fbbf24"] },
+                        links: {
+                            color: "#a7f3d0",
+                            distance: 145,
+                            enable: true,
+                            opacity: 0.2,
+                            width: 1
+                        },
+                        move: {
+                            direction: "none",
+                            enable: true,
+                            outModes: { default: "bounce" },
+                            random: false,
+                            speed: 1.1,
+                            straight: false
+                        },
+                        number: {
+                            density: { enable: true, area: 850 },
+                            value: 65
+                        },
+                        opacity: { value: { min: 0.25, max: 0.65 } },
+                        shape: { type: "circle" },
+                        size: { value: { min: 1.5, max: 3.5 } }
+                    },
+                    detectRetina: true
+                });
+            }
+
+            // Initialize Smooth Scroll Reveal Animations (Fade-In, Slide-Up)
+            const reveals = document.querySelectorAll(".reveal");
+            const revealObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("active");
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.12,
+                rootMargin: "0px 0px -40px 0px"
+            });
+
+            reveals.forEach(el => revealObserver.observe(el));
+
+            // Immediately reveal elements visible above the fold
+            setTimeout(() => {
+                reveals.forEach(el => {
+                    if (el.getBoundingClientRect().top < window.innerHeight) {
+                        el.classList.add("active");
+                    }
+                });
+            }, 100);
+        });
+
+        // Lightbox Gallery Functions
+        function openLightbox(imgSrc, title, subtitle) {
+            const modal = document.getElementById('lightboxModal');
+            const img = document.getElementById('lightboxImg');
+            document.getElementById('lightboxTitle').textContent = title || 'Preview';
+            document.getElementById('lightboxSubtitle').textContent = subtitle || '';
+            img.src = imgSrc;
+            img.onerror = function() {
+                this.onerror = null;
+                this.src = `https://placehold.co/800x600/032212/fde68a?text=${encodeURIComponent(title)}`;
+            };
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeLightbox(event) {
+            const modal = document.getElementById('lightboxModal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        // Admin Modal UI Controls
+        function openAdminModal() {
+            const modal = document.getElementById('adminModal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeAdminModal() {
+            const modal = document.getElementById('adminModal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        function showAdminAlert(message, isError = false) {
+            const box = document.getElementById('adminAlertBox');
+            box.textContent = message;
+            box.className = `mb-4 p-3.5 rounded-xl text-xs font-medium border ${
+                isError
+                    ? 'bg-rose-500/15 border-rose-500/40 text-rose-300'
+                    : 'bg-emerald-500/15 border-emerald-500/40 text-emerald-300'
+            }`;
+            box.classList.remove('hidden');
+        }
+    </script>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+        import {
+            getAuth,
+            signInWithEmailAndPassword,
+            signOut,
+            onAuthStateChanged
+        } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+        import {
+            getFirestore,
+            doc,
+            getDoc,
+            setDoc,
+            onSnapshot
+        } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+
+        // Exact Firebase configuration provided for Md. Saidur Rahman's project
+        const firebaseConfig = {
+            apiKey: "AIzaSyDG9dfkeeQ8njoKm9smMkfBucbeQzqR68U",
+            authDomain: "saidur-rahman-00.firebaseapp.com",
+            projectId: "saidur-rahman-00",
+            storageBucket: "saidur-rahman-00.firebasestorage.app",
+            messagingSenderId: "493592547516",
+            appId: "1:493592547516:web:3877055a5d8d8426a540b9",
+            measurementId: "G-P54J4PZJVV"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const db = getFirestore(app);
+        const portfolioDocRef = doc(db, "portfolio", "profileData");
+
+        // Apply profile data updates to DOM
+        function applyProfileDataToDOM(data) {
+            if (!data) return;
+            if (data.heroTitle) {
+                document.querySelector('#displayHeroTitle span').textContent = data.heroTitle;
+                document.getElementById('editHeroTitle').value = data.heroTitle;
+            }
+            if (data.heroPhone) {
+                const phoneEl = document.querySelector('#displayHeroPhone span');
+                if (phoneEl) phoneEl.textContent = data.heroPhone;
+                document.getElementById('editHeroPhone').value = data.heroPhone;
+            }
+            if (data.heroLocation) {
+                document.getElementById('displayHeroLocation').textContent = data.heroLocation;
+                document.getElementById('editHeroLocation').value = data.heroLocation;
+            }
+            if (data.objectiveText) {
+                document.getElementById('displayObjectiveText').textContent = `"${data.objectiveText.replace(/^"|"$/g, '')}"`;
+                document.getElementById('editObjectiveText').value = data.objectiveText;
+            }
+        }
+
+        // Real-time listener for Firestore profile updates
+        try {
+            onSnapshot(
+                portfolioDocRef,
+                (docSnap) => {
+                    if (docSnap.exists()) {
+                        applyProfileDataToDOM(docSnap.data());
+                    }
+                },
+                (err) => {
+                    console.debug("Firestore read standby:", err.message);
+                }
+            );
+        } catch (err) {
+            console.debug("Firestore initialization standby:", err);
+        }
+
+        // Monitor Admin Auth State
+        onAuthStateChanged(auth, (user) => {
+            const loginView = document.getElementById('adminLoginView');
+            const dashboardView = document.getElementById('adminDashboardView');
+            const navText = document.getElementById('adminNavText');
+            const navIcon = document.getElementById('adminNavIcon');
+
+            if (user && !user.isAnonymous) {
+                loginView.classList.add('hidden');
+                dashboardView.classList.remove('hidden');
+                document.getElementById('loggedInUserEmail').textContent = user.email || 'Admin';
+                navText.textContent = 'Admin Panel';
+                navIcon.className = 'fa-solid fa-user-check text-brand-light';
+            } else {
+                loginView.classList.remove('hidden');
+                dashboardView.classList.add('hidden');
+                navText.textContent = 'Admin Login';
+                navIcon.className = 'fa-solid fa-lock text-brand-light';
+            }
+        });
+
+        // Admin Login Handler
+        window.handleAdminLogin = async function() {
+            const email = document.getElementById('adminEmailInput').value.trim();
+            const password = document.getElementById('adminPasswordInput').value;
+            const btn = document.getElementById('loginSubmitBtn');
+
+            if (!email || !password) {
+                window.showAdminAlert("Please enter both your admin email and password.", true);
+                return;
+            }
+
+            try {
+                btn.disabled = true;
+                btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> <span>Authenticating...</span>';
+                await signInWithEmailAndPassword(auth, email, password);
+                window.showAdminAlert("Successfully authenticated as Admin!", false);
+            } catch (error) {
+                window.showAdminAlert(`Authentication failed: ${error.message}`, true);
+            } finally {
+                btn.disabled = false;
+                btn.innerHTML = '<i class="fa-solid fa-right-to-bracket"></i> <span>Login with Firebase Auth</span>';
+            }
+        };
+
+        // Admin Logout Handler
+        window.handleAdminLogout = async function() {
+            try {
+                await signOut(auth);
+                window.showAdminAlert("Signed out of Admin session.", false);
+            } catch (error) {
+                window.showAdminAlert(`Error signing out: ${error.message}`, true);
+            }
+        };
+
+        // Save Profile Updates to Firestore
+        window.savePortfolioChanges = async function() {
+            if (!auth.currentUser) {
+                window.showAdminAlert("You must be signed in as Admin to save changes.", true);
+                return;
+            }
+
+            const updatedData = {
+                heroTitle: document.getElementById('editHeroTitle').value.trim(),
+                heroPhone: document.getElementById('editHeroPhone').value.trim(),
+                heroLocation: document.getElementById('editHeroLocation').value.trim(),
+                objectiveText: document.getElementById('editObjectiveText').value.trim(),
+                updatedAt: new Date().toISOString()
+            };
+
+            try {
+                await setDoc(portfolioDocRef, updatedData, { merge: true });
+                applyProfileDataToDOM(updatedData);
+                window.showAdminAlert("Portfolio changes saved and synced to Firestore!", false);
+            } catch (error) {
+                window.showAdminAlert(`Could not save to Firestore: ${error.message}`, true);
+            }
+        };
+    </script>
+</body>
+</html>
