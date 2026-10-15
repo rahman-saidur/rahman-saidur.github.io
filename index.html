@@ -153,12 +153,12 @@
             <!-- Desktop Navigation Links -->
             <div class="hidden lg:flex items-center gap-6 text-xs font-medium text-emerald-100/80">
                 <a href="#objective" class="hover:text-brand-DEFAULT transition-colors">Objective</a>
-                <a href="#personal-info" class="hover:text-brand-light transition-colors">Personal</a>
+                <a href="#gallery" class="hover:text-brand-light transition-colors">Achievements</a>
                 <a href="#career-path" class="hover:text-brand-DEFAULT transition-colors">Career Path</a>
                 <a href="#education" class="hover:text-brand-light transition-colors">Education</a>
                 <a href="#training" class="hover:text-brand-DEFAULT transition-colors">Training</a>
-                <a href="#gallery" class="hover:text-brand-light transition-colors">Achievements</a>
-                <a href="#references" class="hover:text-brand-DEFAULT transition-colors">References</a>
+                <a href="#references" class="hover:text-brand-light transition-colors">References</a>
+                <a href="#personal-info" class="hover:text-brand-DEFAULT transition-colors">Personal</a>
                 <a href="#family-info" class="hover:text-brand-light transition-colors">Family</a>
             </div>
 
@@ -241,46 +241,147 @@
             </div>
         </section>
 
-        <!-- ================= 3. PERSONAL INFO ================= -->
-        <section id="personal-info" class="glass-panel p-8 md:p-10 reveal delay-100">
-            <h3 class="text-2xl font-bold mb-6 flex items-center gap-3 text-white border-b border-emerald-300/15 pb-4">
-                <i class="fa-solid fa-id-card-clip text-brand-DEFAULT"></i>
-                <span>Personal Information</span>
-            </h3>
+        <!-- ================= 3. ACHIEVEMENTS & GALLERY ================= -->
+        <section id="gallery" class="glass-panel p-8 md:p-10 reveal delay-100">
+            <div class="text-center max-w-2xl mx-auto mb-9">
+                <h3 class="text-3xl font-extrabold text-gradient inline-flex items-center gap-3 mb-2">
+                    <i class="fa-solid fa-trophy text-brand-DEFAULT"></i>
+                    <span>Achievements & Gallery</span>
+                </h3>
+                <p class="text-emerald-100/80 text-sm">
+                    Official appointment letters, career milestones, and training snapshots. Click any image to inspect in full screen.
+                </p>
+            </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                <!-- Date of Birth -->
-                <div class="glass-card p-5 flex items-center gap-4">
-                    <div class="w-12 h-12 rounded-xl bg-brand-light/15 border border-brand-light/30 flex items-center justify-center shrink-0">
-                        <i class="fa-solid fa-cake-candles text-brand-light text-lg"></i>
-                    </div>
-                    <div>
-                        <p class="text-xs uppercase tracking-wider text-emerald-200/70">Date of Birth</p>
-                        <p id="displayDob" class="text-base font-bold text-white mt-0.5">31 Dec 1995</p>
+            <!-- Notable Recommendations Banner -->
+            <div class="mb-9 glass-card p-6 border border-emerald-300/20">
+                <h4 class="text-sm font-bold uppercase tracking-wider text-brand-DEFAULT mb-4 flex items-center gap-2">
+                    <i class="fa-solid fa-medal text-brand-DEFAULT"></i>
+                    <span>Key Recommendations & Career Milestones</span>
+                </h4>
+                <div id="recommendationsList" class="flex flex-wrap gap-2.5">
+                    <span class="px-4 py-2 rounded-full text-xs font-semibold bg-emerald-400/15 text-emerald-200 border border-emerald-400/35 flex items-center gap-2">
+                        <i class="fa-solid fa-circle-check text-brand-light"></i> MTO at Trust Bank & AIBL
+                    </span>
+                    <span class="px-4 py-2 rounded-full text-xs font-semibold bg-amber-400/15 text-amber-200 border border-amber-400/35 flex items-center gap-2">
+                        <i class="fa-solid fa-circle-check text-brand-DEFAULT"></i> Senior Officer at Uttara Bank
+                    </span>
+                    <span class="px-4 py-2 rounded-full text-xs font-semibold bg-teal-400/15 text-teal-200 border border-teal-400/35 flex items-center gap-2">
+                        <i class="fa-solid fa-circle-check text-teal-300"></i> Asst. Accountant at DPDC
+                    </span>
+                    <span class="px-4 py-2 rounded-full text-xs font-semibold bg-gradient-to-r from-amber-400/25 to-emerald-400/25 text-white border border-amber-300/50 shadow-lg shadow-emerald-950/50 flex items-center gap-2">
+                        <i class="fa-solid fa-earth-americas text-brand-DEFAULT"></i> CEEP by IREX
+                    </span>
+                </div>
+            </div>
+
+            <!-- Dedicated 8-Item Gallery Grid with Exact GitHub Repository Paths -->
+            <div id="galleryGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- 1. BKB Offer Letter -->
+                <div onclick="openLightbox('./image/BKB Offer Letter.jpeg', 'Bangladesh Krishi Bank', 'Senior Officer Offer Letter')"
+                     class="group relative rounded-2xl overflow-hidden shadow-xl border border-emerald-300/20 hover:border-brand-DEFAULT/60 aspect-[4/3] cursor-pointer bg-emerald-950 transition-all">
+                    <img src="./image/BKB Offer Letter.jpeg"
+                         onerror="this.onerror=null; this.src='https://placehold.co/600x450/032212/6ee7b7?text=BKB+Offer+Letter';"
+                         alt="BKB Offer Letter"
+                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-emerald-950/95 via-emerald-950/35 to-transparent opacity-85 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+                        <span class="text-xs font-bold uppercase tracking-wider text-brand-DEFAULT">Bangladesh Krishi Bank</span>
+                        <span class="text-white text-sm font-semibold">Senior Officer Offer Letter</span>
                     </div>
                 </div>
 
-                <!-- Nationality -->
-                <div class="glass-card p-5 flex items-center gap-4">
-                    <div class="w-12 h-12 rounded-xl bg-brand-DEFAULT/15 border border-brand-DEFAULT/30 flex items-center justify-center shrink-0">
-                        <i class="fa-solid fa-flag text-brand-DEFAULT text-lg"></i>
-                    </div>
-                    <div>
-                        <p class="text-xs uppercase tracking-wider text-emerald-200/70">Nationality</p>
-                        <p id="displayNationality" class="text-base font-bold text-white mt-0.5">Bangladeshi</p>
+                <!-- 2. AIBL Offer Letter -->
+                <div onclick="openLightbox('./image/AIBL Offer Letter.jpeg', 'Al-Arafah Islami Bank Ltd', 'Management Trainee Officer (MTO) Offer Letter')"
+                     class="group relative rounded-2xl overflow-hidden shadow-xl border border-emerald-300/20 hover:border-brand-DEFAULT/60 aspect-[4/3] cursor-pointer bg-emerald-950 transition-all">
+                    <img src="./image/AIBL Offer Letter.jpeg"
+                         onerror="this.onerror=null; this.src='https://placehold.co/600x450/032212/34d399?text=AIBL+Offer+Letter';"
+                         alt="AIBL Offer Letter"
+                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-emerald-950/95 via-emerald-950/35 to-transparent opacity-85 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+                        <span class="text-xs font-bold uppercase tracking-wider text-brand-light">Al-Arafah Islami Bank</span>
+                        <span class="text-white text-sm font-semibold">MTO Offer Letter</span>
                     </div>
                 </div>
 
-                <!-- Religion -->
-                <div class="glass-card p-5 flex items-center gap-4">
-                    <div class="w-12 h-12 rounded-xl bg-teal-400/15 border border-teal-400/30 flex items-center justify-center shrink-0">
-                        <i class="fa-solid fa-star-and-crescent text-teal-300 text-lg"></i>
-                    </div>
-                    <div>
-                        <p class="text-xs uppercase tracking-wider text-emerald-200/70">Religion</p>
-                        <p id="displayReligion" class="text-base font-bold text-white mt-0.5">Islam</p>
+                <!-- 3. Trust Bank Offer letter -->
+                <div onclick="openLightbox('./image/Trust Bank Offer letter.jpeg', 'Trust Bank Limited', 'Management Trainee Officer Offer Letter')"
+                     class="group relative rounded-2xl overflow-hidden shadow-xl border border-emerald-300/20 hover:border-brand-DEFAULT/60 aspect-[4/3] cursor-pointer bg-emerald-950 transition-all">
+                    <img src="./image/Trust Bank Offer letter.jpeg"
+                         onerror="this.onerror=null; this.src='https://placehold.co/600x450/032212/fbbf24?text=Trust+Bank+Offer+Letter';"
+                         alt="Trust Bank Offer letter"
+                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-emerald-950/95 via-emerald-950/35 to-transparent opacity-85 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+                        <span class="text-xs font-bold uppercase tracking-wider text-amber-300">Trust Bank Limited</span>
+                        <span class="text-white text-sm font-semibold">MTO Appointment Letter</span>
                     </div>
                 </div>
+
+                <!-- 4. Uttara Bank Offer Letter -->
+                <div onclick="openLightbox('./image/Uttara Bank Offer Letter.jpeg', 'Uttara Bank PLC', 'Senior Officer Offer Letter')"
+                     class="group relative rounded-2xl overflow-hidden shadow-xl border border-emerald-300/20 hover:border-brand-DEFAULT/60 aspect-[4/3] cursor-pointer bg-emerald-950 transition-all">
+                    <img src="./image/Uttara Bank Offer Letter.jpeg"
+                         onerror="this.onerror=null; this.src='https://placehold.co/600x450/032212/5eead4?text=Uttara+Bank+Offer+Letter';"
+                         alt="Uttara Bank Offer Letter"
+                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-emerald-950/95 via-emerald-950/35 to-transparent opacity-85 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+                        <span class="text-xs font-bold uppercase tracking-wider text-teal-300">Uttara Bank PLC</span>
+                        <span class="text-white text-sm font-semibold">Senior Officer Offer Letter</span>
+                    </div>
+                </div>
+
+                <!-- 5. DPDC SAA Offer Letter -->
+                <div onclick="openLightbox('./image/DPDC SAA Offer Letter.jpeg', 'DPDC', 'Assistant Accountant Offer Letter')"
+                     class="group relative rounded-2xl overflow-hidden shadow-xl border border-emerald-300/20 hover:border-brand-DEFAULT/60 aspect-[4/3] cursor-pointer bg-emerald-950 transition-all">
+                    <img src="./image/DPDC SAA Offer Letter.jpeg"
+                         onerror="this.onerror=null; this.src='https://placehold.co/600x450/032212/fde68a?text=DPDC+SAA+Offer+Letter';"
+                         alt="DPDC SAA Offer Letter"
+                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-emerald-950/95 via-emerald-950/35 to-transparent opacity-85 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+                        <span class="text-xs font-bold uppercase tracking-wider text-brand-accent">DPDC</span>
+                        <span class="text-white text-sm font-semibold">Assistant Accountant Offer</span>
+                    </div>
+                </div>
+
+                <!-- 6. Janata Bank Training -->
+                <div onclick="openLightbox('./image/Janata Bank Training.jpeg', 'Janata Bank PLC', 'Training Presentation & Public Speaking')"
+                     class="group relative rounded-2xl overflow-hidden shadow-xl border border-emerald-300/20 hover:border-brand-DEFAULT/60 aspect-[4/3] cursor-pointer bg-emerald-950 transition-all">
+                    <img src="./image/Janata Bank Training.jpeg"
+                         onerror="this.onerror=null; this.src='https://placehold.co/600x450/032212/6ee7b7?text=Janata+Bank+Training';"
+                         alt="Janata Bank Training"
+                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-emerald-950/95 via-emerald-950/35 to-transparent opacity-85 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+                        <span class="text-xs font-bold uppercase tracking-wider text-brand-light">Janata Bank PLC</span>
+                        <span class="text-white text-sm font-semibold">Training Session Presentation</span>
+                    </div>
+                </div>
+
+                <!-- 7. Janata Bank Foundation Training -->
+                <div onclick="openLightbox('./image/Janata Bank Foundation Training.jpeg', 'Janata Bank Staff College, Dhaka', 'Banking Laws & Regulations Batch 02/2023')"
+                     class="group relative rounded-2xl overflow-hidden shadow-xl border border-emerald-300/20 hover:border-brand-DEFAULT/60 aspect-[4/3] cursor-pointer bg-emerald-950 transition-all">
+                    <img src="./image/Janata Bank Foundation Training.jpeg"
+                         onerror="this.onerror=null; this.src='https://placehold.co/600x450/032212/fbbf24?text=Janata+Bank+Foundation+Training';"
+                         alt="Janata Bank Foundation Training"
+                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-emerald-950/95 via-emerald-950/35 to-transparent opacity-85 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+                        <span class="text-xs font-bold uppercase tracking-wider text-brand-DEFAULT">Janata Bank Staff College</span>
+                        <span class="text-white text-sm font-semibold">Foundation Training Batch 02/2023</span>
+                    </div>
+                </div>
+
+                <!-- 8. Titumir College Convocation from DU -->
+                <div onclick="openLightbox('./image/Titumir College Convocation from DU.jpeg', 'University of Dhaka', 'Govt. Titumir College Convocation Souvenirs')"
+                     class="group relative rounded-2xl overflow-hidden shadow-xl border border-emerald-300/20 hover:border-brand-DEFAULT/60 aspect-[4/3] cursor-pointer bg-emerald-950 transition-all">
+                    <img src="./image/Titumir College Convocation from DU.jpeg"
+                         onerror="this.onerror=null; this.src='https://placehold.co/600x450/032212/a7f3d0?text=Titumir+College+Convocation';"
+                         alt="Titumir College Convocation from DU"
+                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-emerald-950/95 via-emerald-950/35 to-transparent opacity-85 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+                        <span class="text-xs font-bold uppercase tracking-wider text-amber-300">University of Dhaka</span>
+                        <span class="text-white text-sm font-semibold">Titumir College Convocation</span>
+                    </div>
+                </div>
+
             </div>
         </section>
 
@@ -472,151 +573,7 @@
             </div>
         </section>
 
-        <!-- ================= 7. ACHIEVEMENTS & GALLERY ================= -->
-        <section id="gallery" class="glass-panel p-8 md:p-10 reveal">
-            <div class="text-center max-w-2xl mx-auto mb-9">
-                <h3 class="text-3xl font-extrabold text-gradient inline-flex items-center gap-3 mb-2">
-                    <i class="fa-solid fa-trophy text-brand-DEFAULT"></i>
-                    <span>Achievements & Gallery</span>
-                </h3>
-                <p class="text-emerald-100/80 text-sm">
-                    Official appointment letters, career milestones, and training snapshots. Click any image to inspect in full screen.
-                </p>
-            </div>
-
-            <!-- Notable Recommendations Banner -->
-            <div class="mb-9 glass-card p-6 border border-emerald-300/20">
-                <h4 class="text-sm font-bold uppercase tracking-wider text-brand-DEFAULT mb-4 flex items-center gap-2">
-                    <i class="fa-solid fa-medal text-brand-DEFAULT"></i>
-                    <span>Key Recommendations & Career Milestones</span>
-                </h4>
-                <div id="recommendationsList" class="flex flex-wrap gap-2.5">
-                    <span class="px-4 py-2 rounded-full text-xs font-semibold bg-emerald-400/15 text-emerald-200 border border-emerald-400/35 flex items-center gap-2">
-                        <i class="fa-solid fa-circle-check text-brand-light"></i> MTO at Trust Bank & AIBL
-                    </span>
-                    <span class="px-4 py-2 rounded-full text-xs font-semibold bg-amber-400/15 text-amber-200 border border-amber-400/35 flex items-center gap-2">
-                        <i class="fa-solid fa-circle-check text-brand-DEFAULT"></i> Senior Officer at Uttara Bank
-                    </span>
-                    <span class="px-4 py-2 rounded-full text-xs font-semibold bg-teal-400/15 text-teal-200 border border-teal-400/35 flex items-center gap-2">
-                        <i class="fa-solid fa-circle-check text-teal-300"></i> Asst. Accountant at DPDC
-                    </span>
-                    <span class="px-4 py-2 rounded-full text-xs font-semibold bg-gradient-to-r from-amber-400/25 to-emerald-400/25 text-white border border-amber-300/50 shadow-lg shadow-emerald-950/50 flex items-center gap-2">
-                        <i class="fa-solid fa-earth-americas text-brand-DEFAULT"></i> CEEP by IREX
-                    </span>
-                </div>
-            </div>
-
-            <!-- Dedicated 8-Item Gallery Grid with Exact GitHub Repository Paths -->
-            <div id="galleryGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                
-                <!-- 1. BKB Offer Letter -->
-                <div onclick="openLightbox('./image/BKB Offer Letter.jpeg', 'Bangladesh Krishi Bank', 'Senior Officer Offer Letter')"
-                     class="group relative rounded-2xl overflow-hidden shadow-xl border border-emerald-300/20 hover:border-brand-DEFAULT/60 aspect-[4/3] cursor-pointer bg-emerald-950 transition-all">
-                    <img src="./image/BKB Offer Letter.jpeg"
-                         onerror="this.onerror=null; this.src='https://placehold.co/600x450/032212/6ee7b7?text=BKB+Offer+Letter';"
-                         alt="BKB Offer Letter"
-                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-emerald-950/95 via-emerald-950/35 to-transparent opacity-85 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
-                        <span class="text-xs font-bold uppercase tracking-wider text-brand-DEFAULT">Bangladesh Krishi Bank</span>
-                        <span class="text-white text-sm font-semibold">Senior Officer Offer Letter</span>
-                    </div>
-                </div>
-
-                <!-- 2. AIBL Offer Letter -->
-                <div onclick="openLightbox('./image/AIBL Offer Letter.jpeg', 'Al-Arafah Islami Bank Ltd', 'Management Trainee Officer (MTO) Offer Letter')"
-                     class="group relative rounded-2xl overflow-hidden shadow-xl border border-emerald-300/20 hover:border-brand-DEFAULT/60 aspect-[4/3] cursor-pointer bg-emerald-950 transition-all">
-                    <img src="./image/AIBL Offer Letter.jpeg"
-                         onerror="this.onerror=null; this.src='https://placehold.co/600x450/032212/34d399?text=AIBL+Offer+Letter';"
-                         alt="AIBL Offer Letter"
-                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-emerald-950/95 via-emerald-950/35 to-transparent opacity-85 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
-                        <span class="text-xs font-bold uppercase tracking-wider text-brand-light">Al-Arafah Islami Bank</span>
-                        <span class="text-white text-sm font-semibold">MTO Offer Letter</span>
-                    </div>
-                </div>
-
-                <!-- 3. Trust Bank Offer letter -->
-                <div onclick="openLightbox('./image/Trust Bank Offer letter.jpeg', 'Trust Bank Limited', 'Management Trainee Officer Offer Letter')"
-                     class="group relative rounded-2xl overflow-hidden shadow-xl border border-emerald-300/20 hover:border-brand-DEFAULT/60 aspect-[4/3] cursor-pointer bg-emerald-950 transition-all">
-                    <img src="./image/Trust Bank Offer letter.jpeg"
-                         onerror="this.onerror=null; this.src='https://placehold.co/600x450/032212/fbbf24?text=Trust+Bank+Offer+Letter';"
-                         alt="Trust Bank Offer letter"
-                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-emerald-950/95 via-emerald-950/35 to-transparent opacity-85 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
-                        <span class="text-xs font-bold uppercase tracking-wider text-amber-300">Trust Bank Limited</span>
-                        <span class="text-white text-sm font-semibold">MTO Appointment Letter</span>
-                    </div>
-                </div>
-
-                <!-- 4. Uttara Bank Offer Letter -->
-                <div onclick="openLightbox('./image/Uttara Bank Offer Letter.jpeg', 'Uttara Bank PLC', 'Senior Officer Offer Letter')"
-                     class="group relative rounded-2xl overflow-hidden shadow-xl border border-emerald-300/20 hover:border-brand-DEFAULT/60 aspect-[4/3] cursor-pointer bg-emerald-950 transition-all">
-                    <img src="./image/Uttara Bank Offer Letter.jpeg"
-                         onerror="this.onerror=null; this.src='https://placehold.co/600x450/032212/5eead4?text=Uttara+Bank+Offer+Letter';"
-                         alt="Uttara Bank Offer Letter"
-                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-emerald-950/95 via-emerald-950/35 to-transparent opacity-85 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
-                        <span class="text-xs font-bold uppercase tracking-wider text-teal-300">Uttara Bank PLC</span>
-                        <span class="text-white text-sm font-semibold">Senior Officer Offer Letter</span>
-                    </div>
-                </div>
-
-                <!-- 5. DPDC SAA Offer Letter -->
-                <div onclick="openLightbox('./image/DPDC SAA Offer Letter.jpeg', 'DPDC', 'Assistant Accountant Offer Letter')"
-                     class="group relative rounded-2xl overflow-hidden shadow-xl border border-emerald-300/20 hover:border-brand-DEFAULT/60 aspect-[4/3] cursor-pointer bg-emerald-950 transition-all">
-                    <img src="./image/DPDC SAA Offer Letter.jpeg"
-                         onerror="this.onerror=null; this.src='https://placehold.co/600x450/032212/fde68a?text=DPDC+SAA+Offer+Letter';"
-                         alt="DPDC SAA Offer Letter"
-                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-emerald-950/95 via-emerald-950/35 to-transparent opacity-85 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
-                        <span class="text-xs font-bold uppercase tracking-wider text-brand-accent">DPDC</span>
-                        <span class="text-white text-sm font-semibold">Assistant Accountant Offer</span>
-                    </div>
-                </div>
-
-                <!-- 6. Janata Bank Training -->
-                <div onclick="openLightbox('./image/Janata Bank Training.jpeg', 'Janata Bank PLC', 'Training Presentation & Public Speaking')"
-                     class="group relative rounded-2xl overflow-hidden shadow-xl border border-emerald-300/20 hover:border-brand-DEFAULT/60 aspect-[4/3] cursor-pointer bg-emerald-950 transition-all">
-                    <img src="./image/Janata Bank Training.jpeg"
-                         onerror="this.onerror=null; this.src='https://placehold.co/600x450/032212/6ee7b7?text=Janata+Bank+Training';"
-                         alt="Janata Bank Training"
-                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-emerald-950/95 via-emerald-950/35 to-transparent opacity-85 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
-                        <span class="text-xs font-bold uppercase tracking-wider text-brand-light">Janata Bank PLC</span>
-                        <span class="text-white text-sm font-semibold">Training Session Presentation</span>
-                    </div>
-                </div>
-
-                <!-- 7. Janata Bank Foundation Training -->
-                <div onclick="openLightbox('./image/Janata Bank Foundation Training.jpeg', 'Janata Bank Staff College, Dhaka', 'Banking Laws & Regulations Batch 02/2023')"
-                     class="group relative rounded-2xl overflow-hidden shadow-xl border border-emerald-300/20 hover:border-brand-DEFAULT/60 aspect-[4/3] cursor-pointer bg-emerald-950 transition-all">
-                    <img src="./image/Janata Bank Foundation Training.jpeg"
-                         onerror="this.onerror=null; this.src='https://placehold.co/600x450/032212/fbbf24?text=Janata+Bank+Foundation+Training';"
-                         alt="Janata Bank Foundation Training"
-                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-emerald-950/95 via-emerald-950/35 to-transparent opacity-85 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
-                        <span class="text-xs font-bold uppercase tracking-wider text-brand-DEFAULT">Janata Bank Staff College</span>
-                        <span class="text-white text-sm font-semibold">Foundation Training Batch 02/2023</span>
-                    </div>
-                </div>
-
-                <!-- 8. Titumir College Convocation from DU -->
-                <div onclick="openLightbox('./image/Titumir College Convocation from DU.jpeg', 'University of Dhaka', 'Govt. Titumir College Convocation Souvenirs')"
-                     class="group relative rounded-2xl overflow-hidden shadow-xl border border-emerald-300/20 hover:border-brand-DEFAULT/60 aspect-[4/3] cursor-pointer bg-emerald-950 transition-all">
-                    <img src="./image/Titumir College Convocation from DU.jpeg"
-                         onerror="this.onerror=null; this.src='https://placehold.co/600x450/032212/a7f3d0?text=Titumir+College+Convocation';"
-                         alt="Titumir College Convocation from DU"
-                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-emerald-950/95 via-emerald-950/35 to-transparent opacity-85 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
-                        <span class="text-xs font-bold uppercase tracking-wider text-amber-300">University of Dhaka</span>
-                        <span class="text-white text-sm font-semibold">Titumir College Convocation</span>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- ================= 8. REFERENCES ================= -->
+        <!-- ================= 7. REFERENCES ================= -->
         <section id="references" class="glass-panel p-8 md:p-10 reveal delay-100">
             <h3 class="text-2xl font-bold mb-8 flex items-center gap-3 text-white border-b border-emerald-300/15 pb-4">
                 <i class="fa-solid fa-user-check text-brand-DEFAULT"></i>
@@ -632,11 +589,6 @@
                         <p class="text-xs text-emerald-100/85 mt-1">Department of Finance and Banking</p>
                         <p class="text-xs text-emerald-200/65">Govt. Titumir College, Dhaka</p>
                     </div>
-                    <div class="mt-4 pt-3 border-t border-emerald-300/15">
-                        <a href="tel:01842663444" class="inline-flex items-center gap-2 text-xs font-semibold text-brand-light hover:underline">
-                            <i class="fa-solid fa-phone"></i> Cell: 01842663444
-                        </a>
-                    </div>
                 </div>
 
                 <!-- Reference 2 -->
@@ -647,10 +599,48 @@
                         <p class="text-xs text-emerald-100/85 mt-1">Directorate General of Forces Intelligence</p>
                         <p class="text-xs text-emerald-200/65">First Secretary, Bangladesh Embassy, Myanmar</p>
                     </div>
-                    <div class="mt-4 pt-3 border-t border-emerald-300/15">
-                        <a href="tel:01717208566" class="inline-flex items-center gap-2 text-xs font-semibold text-brand-DEFAULT hover:underline">
-                            <i class="fa-solid fa-phone"></i> Cell: 01717208566
-                        </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= 8. PERSONAL INFO (PLACED ABOVE FAMILY INFO) ================= -->
+        <section id="personal-info" class="glass-panel p-8 md:p-10 reveal delay-100">
+            <h3 class="text-2xl font-bold mb-6 flex items-center gap-3 text-white border-b border-emerald-300/15 pb-4">
+                <i class="fa-solid fa-id-card-clip text-brand-DEFAULT"></i>
+                <span>Personal Information</span>
+            </h3>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <!-- Date of Birth -->
+                <div class="glass-card p-5 flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-brand-light/15 border border-brand-light/30 flex items-center justify-center shrink-0">
+                        <i class="fa-solid fa-cake-candles text-brand-light text-lg"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs uppercase tracking-wider text-emerald-200/70">Date of Birth</p>
+                        <p id="displayDob" class="text-base font-bold text-white mt-0.5">31 Dec 1995</p>
+                    </div>
+                </div>
+
+                <!-- Nationality -->
+                <div class="glass-card p-5 flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-brand-DEFAULT/15 border border-brand-DEFAULT/30 flex items-center justify-center shrink-0">
+                        <i class="fa-solid fa-flag text-brand-DEFAULT text-lg"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs uppercase tracking-wider text-emerald-200/70">Nationality</p>
+                        <p id="displayNationality" class="text-base font-bold text-white mt-0.5">Bangladeshi</p>
+                    </div>
+                </div>
+
+                <!-- Religion -->
+                <div class="glass-card p-5 flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-teal-400/15 border border-teal-400/30 flex items-center justify-center shrink-0">
+                        <i class="fa-solid fa-star-and-crescent text-teal-300 text-lg"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs uppercase tracking-wider text-emerald-200/70">Religion</p>
+                        <p id="displayReligion" class="text-base font-bold text-white mt-0.5">Islam</p>
                     </div>
                 </div>
             </div>
